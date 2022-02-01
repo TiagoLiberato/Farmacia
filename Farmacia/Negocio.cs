@@ -12,8 +12,14 @@ namespace Farmacia
         {
             Console.WriteLine("Nome: " + receita.Nome);
             Console.WriteLine("Endereco: " + receita.Endereco);
-            Console.WriteLine("Remedio: " + receita.Remedio.Nome);
-            Console.WriteLine("Quantidade: " + receita.Remedio.Quantidade);
+
+            Console.WriteLine("=================Remedio da Receita===============");
+
+            receita.Remedio.ForEach(r => {
+                Console.WriteLine("Remedio: " + r.Nome);
+                Console.WriteLine("Quantidade: " + r.Quantidade);
+            });
+            
 
         }
     }

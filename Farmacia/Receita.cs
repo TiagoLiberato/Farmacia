@@ -10,7 +10,7 @@ namespace Farmacia
     {
         public string Nome { get; set; }
         public string Endereco { get; set; }
-        public Remedio Remedio { get; set; }
+        public List<Remedio> Remedio { get; set; }
       
     }
 }
